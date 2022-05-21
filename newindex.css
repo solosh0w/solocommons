@@ -1,0 +1,342 @@
+body {
+    background-color: #fff;
+    min-height: 100vh;
+    font: normal 16px sans-serif;
+}
+
+
+/* unvisited link */
+a:link {
+  color: #39FF14;
+}
+
+/* visited link */
+a:visited {
+  color: #39FF14;
+}
+
+/* mouse over link */
+a:hover {
+  color: black;
+}
+
+/* selected link */
+a:active {
+  color: #39FF14;
+}
+
+
+
+/* Responsive layout */
+@media screen and (max-width: 600px) {
+  
+div.logo {
+    width: 70px;
+  }
+
+  div.logonew {
+   width: 70px;
+  }
+
+  div.chalice {
+   width: 70px;
+  }
+}
+
+
+@media screen and ( max-width: 600px ) {
+img.responsive { width: 70px; }
+}
+img.responsive { height: auto; }
+
+@media screen and (max-width: 600px) {
+  div.textie {
+    font-size: 1.8rem;
+    margin: 30px;
+  }
+
+}
+
+
+@font-face {
+    font-family: 'fso_revenge_of_zanyregular';
+    src: url('fsoreven-webfont.woff2') format('woff2'),
+        url('fsoreven-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.gallery-container h1 {
+    text-align: center;
+    margin-top: 70px;
+    font-family: 'fso_revenge_of_zanyregular';
+    font-weight: bold;
+    font-size: 100px;
+    color: #58595a;
+}
+
+.gallery-container p.page-description {
+    text-align: center;
+    margin: 30px auto;
+    font-size: 18px;
+    color: #85878c;
+}
+
+/* Styles for the gallery */
+
+.tz-gallery {
+    padding: 40px;
+}
+
+.tz-gallery .thumbnail {
+    padding: 0;
+    margin-bottom: 30px;
+    border: none;
+}
+
+.tz-gallery img {
+    border-radius: 2px;
+}
+
+.tz-gallery .caption{
+    padding: 26px 30px;
+    text-align: center;
+}
+
+.tz-gallery .caption h3 {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+.tz-gallery .caption p {
+    font-size: 12px;
+    color: #7b7d7d;
+    margin: 0;
+}
+
+
+
+/* Styles for the gallery2 */
+
+.tz-gallery2 {
+    padding: 40px;
+}
+
+.tz-gallery2 .thumbnail {
+    padding: 0;
+    margin-bottom: 30px;
+    border: none;
+}
+
+.tz-gallery2 img {
+    border-radius: 2px;
+}
+
+.tz-gallery2 .caption{
+    padding: 26px 30px;
+    text-align: center;
+}
+
+.tz-gallery2 .caption h3 {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+.tz-gallery2 .caption p {
+    font-size: 12px;
+    color: #7b7d7d;
+    margin: 0;
+}
+
+
+.gallery-container2 h1 {
+    text-align: center;
+    margin-top: 70px;
+    font-family: 'addiel';
+    font-weight: bold;
+    color: #58595a;
+}
+
+.gallery-container2 p.page-description {
+    text-align: center;
+    margin: 30px auto;
+    font-size: 18px;
+    color: #85878c;
+}
+
+.baguetteBox-button {
+    background-color: transparent !important;
+}
+
+.cappy {
+      max-width: 1300px;
+      font-family: arial;
+      font-size: 3vw;
+      opacity: 70%;
+      color: white;
+      margin:0 auto;
+      text-align:left;
+}
+
+
+ img:hover {
+        opacity: 90%;
+        filter: alpha(opacity=90);
+    }
+
+    
+
+.logo{
+padding-left: 20px;
+font-weight: 500;
+position: fixed;
+right: 0;
+top: 0;
+margin: 20px;
+color: #A929EE;
+z-index: 999;
+width: 170px;
+}
+
+  .logonew{
+padding-left: 20px;
+font-weight: 500;
+position: fixed;
+right: 0;
+top: 250px;
+margin: 20px;
+color: #A929EE;
+z-index: 999;
+width: 170px;
+
+}
+
+    .chalice{
+padding-left: 20px;
+font-weight: 500;
+position: fixed;
+right: 0;
+top: 480px;
+margin: 20px;
+color: #A929EE;
+z-index: 999;
+width: 170px;
+}
+
+
+img.logo:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+ .modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: white;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+#mydiv {
+  position: absolute;
+  z-index: 9;
+  background-color: #f1f1f1;
+  border: 0px solid #d3d3d3;
+  text-align: center;
+}
+
+#mydivheader {
+  padding: 10px;
+  cursor: move;
+  z-index: 10;
+  color: #fff;
+}
+
+
+
+.content {
+  height: 1px;
+
+}
+ @font-face {
+  font-display: block;
+  font-family: "Standard";
+  src: url("https://type.cargo.site/files/Standard-Book.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+  unicode-range: U+0000-DFFF, U+F900-FFFD;
+}
+
+
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+
+.textie {
+  font-family: Standard, 'Spoqa Han Sans Neo', Icons;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 4.5rem;
+  line-height: 1;
+  color: rgb(0, 0, 0);
+   letter-spacing: -0.1rem;
+  text-align:left;text-indent:0em;padding: 0;text-transform:none;font-style:normal;text-decoration: none;
+margin: 85px;
+z-index: 99999;
+}
+
+.artists {
+  font-size: 30px;
+  font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+  font-weight: 700;
+  background-color: black;
+  line-height: 1.5em;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+  bottom:0;
+}
