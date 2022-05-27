@@ -26,18 +26,104 @@ a:active {
 }
 
 
-
-/* Responsive layout */
-@media screen and (max-width: 600px) {
+/* ----*** Header ***---- */
+header.index{
+  position: fixed;
+  right: 0;
+  top: 0;
+  margin: 20px; 
+  z-index: 999;
+  width: 185px;
+  text-align: center;
+  }
   
-div.logo {
+  .logo{
+    width: 83%;
+    margin-bottom: 40px;
+  }
+
+  .logo:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+/* --- Modal --- */
+ .modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: white;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Modal Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px){
+  header.index{
+    position: relative;
+    display: flex;
+    gap: 1rem;
+    margin: 0 0 20px 20px;
+  }
+
+  .logo {
     width: 70px;
   }
 
-  div.logonew {
-   width: 70px;
-  }
+  .logonew {
+    width: 100px;
+   }
 
+
+   div.textie {
+    font-size: 1.8rem;
+    margin: 30px;
+  }
+}
+
+
+/* Responsive layout */
+@media screen and (max-width: 600px) {
   div.chalice {
    width: 70px;
   }
@@ -49,13 +135,7 @@ img.responsive { width: 70px; }
 }
 img.responsive { height: auto; }
 
-@media screen and (max-width: 600px) {
-  div.textie {
-    font-size: 1.8rem;
-    margin: 30px;
-  }
-
-}
+ 
 
 
 @font-face {
@@ -189,32 +269,9 @@ img.responsive { height: auto; }
 
     
 
-.logo{
-padding-left: 20px;
-font-weight: 500;
-position: fixed;
-right: 0;
-top: 0;
-margin: 20px;
-color: #A929EE;
-z-index: 999;
-width: 170px;
-}
 
-  .logonew{
-padding-left: 20px;
-font-weight: 500;
-position: fixed;
-right: 0;
-top: 250px;
-margin: 20px;
-color: #A929EE;
-z-index: 999;
-width: 170px;
 
-}
-
-    .chalice{
+.chalice{
 padding-left: 20px;
 font-weight: 500;
 position: fixed;
@@ -227,60 +284,7 @@ width: 170px;
 }
 
 
-img.logo:hover {
-    animation: shake 0.5s;
-    animation-iteration-count: infinite;
-}
 
-@keyframes shake {
-  0% { transform: translate(1px, 1px) rotate(0deg); }
-  10% { transform: translate(-1px, -2px) rotate(-1deg); }
-  20% { transform: translate(-3px, 0px) rotate(1deg); }
-  30% { transform: translate(3px, 2px) rotate(0deg); }
-  40% { transform: translate(1px, -1px) rotate(1deg); }
-  50% { transform: translate(-1px, 2px) rotate(-1deg); }
-  60% { transform: translate(-3px, 1px) rotate(0deg); }
-  70% { transform: translate(3px, 1px) rotate(-1deg); }
-  80% { transform: translate(-1px, -1px) rotate(1deg); }
-  90% { transform: translate(1px, 2px) rotate(0deg); }
-  100% { transform: translate(1px, -2px) rotate(-1deg); }
-}
-
- .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-}
-
-/* Modal Content */
-.modal-content {
-  background-color: white;
-  margin: auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
-}
-
-/* The Close Button */
-.close {
-  color: white;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
 
 
 #mydiv {
